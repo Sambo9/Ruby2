@@ -1,12 +1,12 @@
 #!/usr/bin ruby
 
-# require './ex_9.rb'
+require './ex_10.rb'
                           # =====================================
                           # ========= Class MyContainer =========
                           # =====================================
 
 class MyContainer
-  include MyDebug
+  include MyEnumerable
 
   # ========= Attributes =========
   attr_reader :data
