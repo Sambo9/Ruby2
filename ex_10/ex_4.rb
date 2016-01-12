@@ -35,6 +35,18 @@ class MyContainer
   end
 end
 
+
+cnt = MyContainer.new
+cnt << 1 << "toto" << "titi" << 2 << "tata"
+# cnt.my_each {|elem| puts elem}
+
+# puts cnt.my_map {|elem| elem.is_a?(Integer) ? elem + 1 : elem}
+# puts cnt.my_select {|elem| elem.is_a?(Integer)}
+puts cnt.inspect
+puts cnt.my_sort {|elem1, elem2| elem1.is_a?(Integer) ? -1 : 1}
+
+
+
 # ctn = MyContainer.new
 # ctn << 1 << "toto" << "titi" << 42 << "tata"
 # puts ctn.who_am_i
