@@ -25,7 +25,7 @@ class MyContainer
     self
   end
   def +(el)
-    @data.push(el.data)
+    @data = @data + el.data
     self
   end
   def to_s
