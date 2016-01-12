@@ -1,7 +1,7 @@
 #!/usr/bin ruby
 
 def reverse_array_sort(arr)
-  arr.sort.reverse
+  arr.sort!{ |x,y| y <=> x }
 end
 
 # arr = %w(hello how are you doing)
