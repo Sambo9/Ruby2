@@ -14,18 +14,18 @@ class Area
 
 
   # ========= Methods =========
-  
-  def rectangle(l, w)
+
+  def self.rectangle(l, w)
     area = l * w
   end
-  def circle(r)
+  def self.circle(r)
     area = Math::PI * (r * r)
   end
-  def triangle(b, h)
+  def self.triangle(b, h)
     area = (b * h) / 2
   end
 end
 
-puts Area.rectangle(21, 42)
-puts Area.circle(84)
-puts Area.triangle(10, 20)
+# puts Area.rectangle(21, 42)
+# puts Area.circle(84)
+# puts Area.triangle(10, 20)
